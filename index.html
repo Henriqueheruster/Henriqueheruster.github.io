@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,19 +25,18 @@
             </ul>
         </nav>
         <div class="caixa-secundaria">
-            <h1>Henrique <span>Heruster</span></h1>
-            <h3>Programador Full Stack <span>&lt;/&gt;</span></h3>
+            <h1 class="titulo">Henrique <span>Heruster</span></h1>
+            <h3 class="titulo">Programador Full Stack <span>&lt;/&gt;</span></h3>
         </div>
     </div>
 
     <section id="Sobre-mim-id">
 
-        <img src="./img/Sobre_mim.jpg"  alt="Sobre_mim" class="IMG_SOBRE-MIM">
-
+        <img class="img-1" src="./img/Sobre_mim.jpg"  alt="Sobre_mim" class="IMG_SOBRE-MIM">
         <div class="Sobre-mim">
 
-            <h2>Sobre mim</h2>
-            <p> Sou um estudante de Engenharia de Software, apaixonado por programação e Hacking.
+            <h2 class="titulo">Sobre mim</h2>
+            <p class="texto"> Sou um estudante de Engenharia de Software, apaixonado por programação e Hacking.
                 Desde que entrei no mundo da tecnologia, fiquei fascinado pela capacidade de criar soluções inovadoras e descobrir como as coisas funcionam nos bastidores.
                 Programar me permite transformar ideias em realidade, a sensação de ver um código que escrevi funcionando perfeitamente é incrível e me motiva a aprender mais a cada dia.
                 Além disso, o hacking ético, que envolve a busca por vulnerabilidades em sistemas para melhorá-los, é uma área que me desafia intelectualmente.
@@ -48,11 +48,11 @@
 
     <div class="projetos" id="projeto-id">
 
-        <h2>Principais Projetos</h2>
+        <h2 class="titulo">Principais Projetos</h2>
 
         <div class="card-projeto">
 
-            <div class="card">
+            <div class="card" id="card-1">
                 <img src="./img/super_mario.gif">
                 <h5>Jogo Super Mario</h5>
                 <p>Um pequeno projeto do classico jogo do Super Mario feito em HTML/CSS e JavaScript</p>
@@ -60,7 +60,7 @@
 
             </div>
 
-            <div class="card">
+            <div class="card" id="card-2">
                 <img src="./img/pokedex.png">
                 <h5>Pokedex</h5>
                 <p>Um projeto feito com HTML/CSS e JavaScript com manipulação de API para trazer dados de Pokemons</p>
@@ -68,7 +68,7 @@
 
             </div>
 
-            <div class="card">
+            <div class="card" id="card-3">
                 <img src="./img/correcao.png">
                 <h5>Corrigir_Prova</h5>
                 <p>Primeiro projeto feito na faculdade com linguem C, simples e didático</p>
@@ -81,8 +81,8 @@
     </div>
 
     <footer id="fale-comigo">
-        <h5>Henrique Heruster</h5>
-        <p>Para mais informações</p>
+        <h5 class="titulo">Henrique Heruster</h5>
+        <p class="texto">Para mais informações</p>
 
         <div class="social">
             <a href="https://www.linkedin.com/in/henrique-heruster-24287117b/" target="_blank"><img src="./img/linkdln-logo.png"></a>
@@ -92,6 +92,6 @@
         </div>
 
     </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
