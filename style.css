@@ -62,24 +62,66 @@ li:hover{
     transition: 0.5s;
 }
 
+h1{
+  color: #ffff;
+  font-size: 100px;
+}
+
+h1 span{
+  color: rgb(51, 225, 231);
+}
+
 .caixa-secundaria{
     position: absolute;
     top: 50%;
     left: 7%;
+    overflow: hidden;
 }
 
-h1{
-    color: #ffff;
-    font-size: 100px;
+.animacao-texto{
+  display: flex;
+  align-items: center;
 }
 
-h1 span{
-    color: rgb(51, 225, 231);
+.animacao-texto span{
+  margin-left: 10px;
 }
 
 .caixa-secundaria h3{
     color: #ffff;
     font-size: 50px;
+}
+
+.titulo{
+  visibility: hidden;
+}
+
+.caixa-secundaria .text{
+    position: relative;
+    color: rgb(51, 225, 231);
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.caixa-secundaria .text.sec-text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #191919;
+    border-left: 2px solid rgb(51, 225, 231);
+    animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate{
+  40%, 60%{
+      left: calc(100% + 4px);
+  }
+  100%{
+      left: 0%;
+  }
 }
 
 .caixa-secundaria h3 span{
@@ -268,10 +310,6 @@ footer p{
     transition: 0.5s;
 }
 
-.titulo{
-  visibility: hidden;
-}
-
 .texto{
   visibility: hidden;
 }
@@ -452,4 +490,4 @@ footer p{
     }
   }
   
-
+ 

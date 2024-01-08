@@ -17,3 +17,26 @@ function menuShow(){
         document.querySelector('.icone').src = "./img/Menu.svg";
     }
 }
+
+const text = document.querySelector(".sec-text");
+
+const textLoad = () => {
+    setTimeout(() => {
+
+        text.textContent = "Programador";
+
+    }, 0);
+    setTimeout(() => {
+
+        text.textContent = "Hacking Etico";
+
+    }, 4000);
+    setTimeout(() => {
+
+        text.textContent = "Universitario";
+
+    }, 8000);
+}
+
+textLoad();
+setInterval(textLoad, 12000);
