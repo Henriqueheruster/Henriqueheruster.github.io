@@ -28,12 +28,12 @@ const textLoad = () => {
     }, 0);
     setTimeout(() => {
 
-        text.textContent = "Hacking Etico";
+        text.textContent = "Hacking Ético";
 
     }, 4000);
     setTimeout(() => {
 
-        text.textContent = "Universitario";
+        text.textContent = "Universitário";
 
     }, 8000);
 }
